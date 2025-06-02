@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net48</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>default</LangVersion>
+		<Platforms>x64;x86</Platforms>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Include="..\RegfreeNetCom\IServer.cs" Link="IServer.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="Microsoft.CSharp" />
+	</ItemGroup>
+
+	<Target BeforeTargets="AfterBuild" Name="CopyRegfreeNetComOutput">
+		<ItemGroup>
+			<!-- this presumes $(OutDir) is same structure for both project and RegfreeNetCom is .NET 8 -->
+			<RegfreeNetComOutput Include="$(SolutionDir)RegfreeNetCom\$(OutDir)..\net8.0\**" />
+		</ItemGroup>
+		<Copy SourceFiles="@(RegfreeNetComOutput)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
+	</Target>
+	
+</Project>

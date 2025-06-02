@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<EnableComHosting>true</EnableComHosting>
+		<EnableRegFreeCom>true</EnableRegFreeCom>
+		<Platforms>x64;x86</Platforms>
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="dSPACE.Runtime.InteropServices.BuildTasks" Version="1.15.2">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<DsComTypeLibraryEmbedAfterBuild>true</DsComTypeLibraryEmbedAfterBuild>
+		<DsComTypeLibraryUniqueId>884a30bc-a52e-431f-84e9-cd2b9e6ca0df</DsComTypeLibraryUniqueId>
+	</PropertyGroup>
+	
+</Project>

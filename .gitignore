@@ -404,3 +404,12 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# RegfreeNetCom specific files
+!VBScriptClient/x86
+!VBScriptClient/x64
+RegfreeNetCom.comhost.dll
+RegfreeNetCom.dll
+RegfreeNetCom.deps.json
+RegfreeNetCom.runtimeconfig.json
+RegfreeNetCom.X.manifest

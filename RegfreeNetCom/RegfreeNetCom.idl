@@ -1,0 +1,28 @@
+﻿import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	oleautomation,
+	uuid(38268d0f-eae8-4c95-bac7-9d96c083ea7c)
+]
+interface IServer : IDispatch
+{
+	HRESULT ComputePi([out, retval] double* ret);
+};
+
+[
+	uuid(2122ad87-7620-4139-bf4d-0a944ffafc80)
+]
+library RegfreeNetCom
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(cd42c360-c635-44fe-a8ab-793d188512a9)
+	]
+		coclass Server
+	{
+		[default] interface IServer;
+	}
+}

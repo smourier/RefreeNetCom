@@ -7,9 +7,9 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine($"Running from .NET Framework x{(IntPtr.Size == 8 ? "64" : "86")}");
+        Console.WriteLine($"Running from .NET Framework client x{(IntPtr.Size == 8 ? "64" : "86")}");
         var server = (IServer)new Server();
-        Console.WriteLine($"Pi = {server.ComputePi()}");
+        Console.WriteLine($"IServer Pi = {server.ComputePi()}");
     }
 }
 

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "RegfreeNetCom": {
+      "commandName": "Project"
+    },
+    "VB": {
+      "commandName": "Executable",
+      "executablePath": "E:\\smo\\GitHub\\RegfreeNetCom\\VBClient\\Project1.exe",
+      "nativeDebugging": true
+    }
+  }
+}

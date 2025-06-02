@@ -2,7 +2,7 @@
 
 namespace RegfreeNetCom;
 
-[ComVisible(true), Guid("cd42c360-c635-44fe-a8ab-793d188512a9")]
+[ComVisible(true), Guid("cd42c360-c635-44fe-a8ab-793d188512a9"), ProgId("RegfreeNetCom.Server"), ClassInterface(ClassInterfaceType.AutoDual)]
 public class Server : IServer
 {
     public double ComputePi()

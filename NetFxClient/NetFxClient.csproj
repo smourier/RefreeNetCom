@@ -18,9 +18,9 @@
 		<Reference Include="Microsoft.CSharp" />
 	</ItemGroup>
 
-	<Target BeforeTargets="AfterBuild" Name="CopyRegfreeNetComOutput">
+	<Target BeforeTargets="AfterBuild" Name="CopyRegfreeNetNeededFiles">
 		<ItemGroup>
-			<!-- this presumes $(OutDir) is same structure for both project and RegfreeNetCom is .NET 8 -->
+			<!-- this presumes this project $(OutDir) is same structure for both project and RegfreeNetCom is .NET 8 -->
 			<RegfreeNetComOutput Include="$(SolutionDir)RegfreeNetCom\$(OutDir)..\net8.0\**" />
 		</ItemGroup>
 		<Copy SourceFiles="@(RegfreeNetComOutput)" DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />

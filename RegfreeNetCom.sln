@@ -10,6 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetFxClient", "NetFxClient\
 		{277AAE31-720A-4813-9875-D06F595D9359} = {277AAE31-720A-4813-9875-D06F595D9359}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativeClient", "NativeClient\NativeClient.vcxproj", "{6B504D7C-437F-4449-864A-5E7E53324549}"
+	ProjectSection(ProjectDependencies) = postProject
+		{277AAE31-720A-4813-9875-D06F595D9359} = {277AAE31-720A-4813-9875-D06F595D9359}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -34,6 +39,14 @@ Global
 		{77B7A0BA-CE8F-1D41-6217-17E05534AAFE}.Release|x64.Build.0 = Release|x64
 		{77B7A0BA-CE8F-1D41-6217-17E05534AAFE}.Release|x86.ActiveCfg = Release|x86
 		{77B7A0BA-CE8F-1D41-6217-17E05534AAFE}.Release|x86.Build.0 = Release|x86
+		{6B504D7C-437F-4449-864A-5E7E53324549}.Debug|x64.ActiveCfg = Debug|x64
+		{6B504D7C-437F-4449-864A-5E7E53324549}.Debug|x64.Build.0 = Debug|x64
+		{6B504D7C-437F-4449-864A-5E7E53324549}.Debug|x86.ActiveCfg = Debug|Win32
+		{6B504D7C-437F-4449-864A-5E7E53324549}.Debug|x86.Build.0 = Debug|Win32
+		{6B504D7C-437F-4449-864A-5E7E53324549}.Release|x64.ActiveCfg = Release|x64
+		{6B504D7C-437F-4449-864A-5E7E53324549}.Release|x64.Build.0 = Release|x64
+		{6B504D7C-437F-4449-864A-5E7E53324549}.Release|x86.ActiveCfg = Release|Win32
+		{6B504D7C-437F-4449-864A-5E7E53324549}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

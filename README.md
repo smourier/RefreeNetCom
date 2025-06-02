@@ -10,6 +10,8 @@ The sample is composed of
 
 Everything is reg-free. All clients can call the .NET Server.
 
+There's a similar Out-Of-Process COM server project available here: [RegfreeNetComServer](https://github.com/smourier/RegfreeNetComServer)
+
 ## Notes
 Reg-Free COM is here based on a Type Library .TLB file (`RegfreeNetCom.tlb`) present aside the all clients .exe (no TLB is embedded in this sample). Both .NET and C++ projects have a specific `app.manifest` file that declares that type library.
 

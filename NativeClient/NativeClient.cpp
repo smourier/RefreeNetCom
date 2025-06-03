@@ -18,11 +18,9 @@ int main()
 
 	std::ignore = CoInitialize(nullptr);
 
-	IDispatch* d;
-	auto x = CoCreateInstance(__uuidof(Server), nullptr, CLSCTX_ALL, __uuidof(IDispatch), (void**)&d);
-
 	IServerPtr server;
-	if (SUCCEEDED(server.CreateInstance(__uuidof(Server))))
+	auto hr = server.CreateInstance(__uuidof(Server));
+	if (SUCCEEDED(hr))
 	{
 		auto pi = server->ComputePi();
 		printf("IUnknown-derived pi:%f\n", pi);
@@ -46,6 +44,10 @@ int main()
 				}
 			}
 		}
+	}
+	else
+	{
+		printf("CoCreateInstance failed:0x%08X\n", hr);
 	}
 	CoUninitialize();
 }

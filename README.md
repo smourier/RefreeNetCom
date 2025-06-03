@@ -2,13 +2,14 @@
 A registry-free In-Process COM server
 
 The sample is composed of
-* a .NET 8.0 COM In-Process server (supports x86 or x64)
+* a "RefreeNetCom" .NET 8.0 COM In-Process server (supports x86 or x64)
 * a native x86, x64 console client written in C++
 * a .NET Framework x86 or x64 console client written in C#
 * a VB6 x86 client (only works when compiled as an .exe)
-* a VBScript client which currently doesn't work for some reason...
+* a VBScript x86, x64 client.
+* And Excel VBA x64 client.
 
-Everything is reg-free. All clients can call the .NET Server.
+Everything is reg-free. All clients can call the .NET Server. Build RefreeNetCom for x86 to test x86 clients, build RefreeNetCom for x64 to test x64 clients.
 
 There's a similar Out-Of-Process COM server project available here: [RegfreeNetComServer](https://github.com/smourier/RegfreeNetComServer)
 

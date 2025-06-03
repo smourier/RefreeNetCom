@@ -3,7 +3,7 @@
 	<assemblyIdentity version="1.0.0.0" name="VBScriptClient.app"/>
 	<dependency>
 		<dependentAssembly>
-			<assemblyIdentity type="win32" name="RegfreeNetCom.X" version="1.0.0.0" />
+			<assemblyIdentity type="win32" name="RegfreeNetCom" version="1.0.0.0" />
 		</dependentAssembly>
 	</dependency>
 </assembly>

@@ -5,7 +5,6 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<EnableComHosting>true</EnableComHosting>
-		<EnableRegFreeCom>true</EnableRegFreeCom>
 		<Platforms>x64;x86</Platforms>
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 	</PropertyGroup>
@@ -18,6 +17,10 @@
 		<Midl Include="RegfreeNetCom.idl" />
 	</ItemGroup>
 
+	<ItemGroup>
+		<ComHostTypeLibrary Include="$(OutputPath)RegfreeNetCom.tlb" Id="1" />
+	</ItemGroup>
+	
 	<Import Project="GetWindowsSDKPaths.targets" />
 	<Target Name="GenerateTlbs" BeforeTargets="BeforeBuild">
 		<GetWindowsSDKPaths>
@@ -35,6 +38,7 @@
 		</ItemGroup>
 		<Copy SourceFiles="@(RegfreeNetComOutput)" DestinationFolder="$(SolutionDir)VBScriptClient\$(Platform)" SkipUnchangedFiles="true" />
 		<Copy Condition="'$(Platform)'=='x86'" SourceFiles="@(RegfreeNetComOutput)" DestinationFolder="$(SolutionDir)VBClient" SkipUnchangedFiles="true" />
+		<Copy Condition="'$(Platform)'=='x64'" SourceFiles="@(RegfreeNetComOutput)" DestinationFolder="$(SolutionDir)ExcelVBAClient" SkipUnchangedFiles="true" />
 		<Copy Condition="'$(Platform)'=='x86'" SourceFiles="@(RegfreeNetComOutput)" DestinationFolder="$(SolutionDir)$(Configuration)" SkipUnchangedFiles="true" />
 		<Copy Condition="'$(Platform)'=='x64'" SourceFiles="@(RegfreeNetComOutput)" DestinationFolder="$(SolutionDir)$(Platform)\$(Configuration)" SkipUnchangedFiles="true" />
 	</Target>

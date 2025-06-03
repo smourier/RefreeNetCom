@@ -17,6 +17,10 @@ int main()
 	}
 
 	std::ignore = CoInitialize(nullptr);
+
+	IDispatch* d;
+	auto x = CoCreateInstance(__uuidof(Server), nullptr, CLSCTX_ALL, __uuidof(IDispatch), (void**)&d);
+
 	IServerPtr server;
 	if (SUCCEEDED(server.CreateInstance(__uuidof(Server))))
 	{

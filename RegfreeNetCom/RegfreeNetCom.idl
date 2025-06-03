@@ -4,6 +4,7 @@ import "ocidl.idl";
 [
 	object,
 	oleautomation,
+	dual,
 	uuid(38268d0f-eae8-4c95-bac7-9d96c083ea7c)
 ]
 interface IServer : IDispatch

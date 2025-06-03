@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
 	<assemblyIdentity version="1.0.0.0" name="RegfreeNetCom" type="win32" />
+	<file name="RegfreeNetCom.comhost.dll">
+		<typelib
+		  tlbid="{2122ad87-7620-4139-bf4d-0a944ffafc80}"
+		  version="1.0"
+		  helpdir="" />
+		<comClass
+		  description="Server"
+		  clsid="{cd42c360-c635-44fe-a8ab-793d188512a9}"
+		  threadingModel="Both"
+		  progid="RegfreeNetCom.Server"
+		  tlbid="{2122ad87-7620-4139-bf4d-0a944ffafc80}" />
+	</file>
+	<comInterfaceExternalProxyStub
+	  iid="{38268d0f-eae8-4c95-bac7-9d96c083ea7c}"
+	  name="IServer"
+	  tlbid="{2122ad87-7620-4139-bf4d-0a944ffafc80}"
+	  baseInterface="{00020400-0000-0000-c000-000000000046}"
+	  proxyStubClsid32="{00020424-0000-0000-C000-000000000046}" />
 </assembly>

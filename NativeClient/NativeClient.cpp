@@ -43,6 +43,7 @@ int main()
 					VariantClear(&v);
 				}
 			}
+			disp->Release();
 		}
 	}
 	else

@@ -1,4 +1,4 @@
-# RefreeNetCom
+# RegfreeNetCom
 A registry-free In-Process COM server
 
 The sample is composed of

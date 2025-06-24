@@ -6,10 +6,10 @@ The sample is composed of
 * a native x86, x64 console client written in C++
 * a .NET Framework x86 or x64 console client written in C#
 * a VB6 x86 client (only works when compiled as an .exe)
-* a VBScript x86, x64 client.
-* And Excel VBA x64 client.
+* a VBScript x86, x64 client
+* and Excel VBA x64 client
 
-Everything is reg-free. All clients can call the .NET Server. Build RefreeNetCom for x86 to test x86 clients, build RefreeNetCom for x64 to test x64 clients.
+Everything is reg-free. All clients can call the .NET Server. Build RefreeNetCom for x86 to test x86 clients, build RefreeNetCom for x64 to test x64 clients. PS: you may have to build twice for all projects to build sucessfully.
 
 There's a similar Out-Of-Process COM server project available here: [RegfreeNetComServer](https://github.com/smourier/RegfreeNetComServer)
 

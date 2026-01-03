@@ -22,4 +22,7 @@
   <ItemGroup>
     <Manifest Include="app.manifest" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="RegfreeNetCom.tlb" />
+  </ItemGroup>
 </Project>

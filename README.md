@@ -2,7 +2,7 @@
 A registry-free In-Process COM server
 
 The sample is composed of
-* a "RefreeNetCom" .NET 8.0 COM In-Process server (supports x86 or x64)
+* a "RefreeNetCom" .NET 10.0 COM In-Process server (supports x86 or x64)
 * a native x86, x64 console client written in C++
 * a .NET Framework x86 or x64 console client written in C#
 * a VB6 x86 client (only works when compiled as an .exe)
